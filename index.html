@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="https://kit.fontawesome.com/c5e216e624.js" crossorigin="anonymous"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Booki - Site de location</title>
 </head>
 <body>
@@ -25,9 +25,8 @@
         <div class="textePromo">Trouvez votre hébergement pour des vacances de rêve</div>
         <div class="typeHebergement">En plein centre ville ou en pleine nature</div>
         <div id="barreDeRecherche">
-            <div class="mapsIcon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-            </svg>
+            <div class="mapsIcon">
+                <i class="fa-solid fa-location-dot"></i>
             </div>
             
             <div class="chanpRecherche">
@@ -37,11 +36,16 @@
             <a href="#" class="boutonRechercher">
                 Rechercher
             </a>
+
+            <a href="#" class="iconLoupe">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
         </div>
         
         <!-- Section Filtre-->
         <div id="sectionFiltre">
             <p class="titreFiltre">Filtres</p>
+            <div class="cadreFiltre">
             <a href="#" class="contentfiltre">
                 <div class="iconFiltre"><i class="fa-solid fa-money-bill-wave"></i>
                 </div> <div class="texteIcon">Économique</div>
@@ -62,17 +66,18 @@
                 </div> <div class="texteIcon">Animaux autorisés</div>
             </a>
         </div>
+        </div>
         
         
         <div class="contentInfo">
-            <div class="borederInconInfo"><i class="fa-solid fa-info"></i></div>
+            <div class="borderInconInfo"><i class="fa-solid fa-info"></i></div>
             <span>Plus de 500 logements sont disponibles dans cette ville</span>
         </div>
 
         <!--SECTION HEBERGEMENT-->
-        <div id="hebergementAmarseille" class="hebergement">
+        <div class="hebergement">
         <div class="carteHebergement">
-            <h1>Hébergements à marseille</h1>
+            <h1 id="hebergementAmarseille">Hébergements à marseille</h1>
             <div class="contentHebergement">
                 <div class="cadreHebergement">
                     <a class="simpleHerbegement" href="#">
@@ -212,7 +217,7 @@
                 </div>
             </div>
 
-                <div class="contentActivites">
+                <div id="contentActivites" class="contentActivites">
                     <div id="WidthP3" class="cadreActivites">
                         <a class="simpleActivites" href="#">
                             <img id="Gimages2" src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image Activité">
