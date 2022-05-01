@@ -464,6 +464,9 @@ body
 }
 
 /***********HEADER************/
+#imageLogo{
+  width: 110px;
+}
 
 header{
   font-family: ralewaysemibold, Verdana, Geneva, Tahoma, sans-serif ;
@@ -473,10 +476,6 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-#imageLogo{
-  width: 110px;
 }
 
 /**********Menu navigation***********/
@@ -746,27 +745,6 @@ footer h1
   width: 70%;
 }
 
-.cadreHebergement
-{
-  background-color: white;
-  padding: 5px;
-  padding-bottom: 10px;
-  border-radius: 20px;
-  margin: 0px 15px 15px 15px;
-  width: 100%;
-  box-shadow: 0px 5px 20px #d9d9d9;
-}
-
-.cadreHebergement img
-{
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  object-fit: cover;
-  height: 110px;
-  width: 100%;
-
-}
-
 .carteHebergement h1, h2
 {
   padding-left: 20px;
@@ -789,6 +767,26 @@ footer h1
   font-size: 18px;
 }
 
+.cadreHebergement
+{
+  background-color: white;
+  padding: 5px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  margin: 0px 15px 15px 15px;
+  width: 100%;
+  box-shadow: 0px 5px 20px #d9d9d9;
+}
+
+.cadreHebergement img
+{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  height: 110px;
+  width: 100%;
+
+}
 
 /***********LES POPULAIRES************/
 .cartePopulaire{
@@ -862,6 +860,8 @@ footer h1
   font-family: ralewaybold, Verdana, Geneva, Tahoma, sans-serif;  
   font-size: 18px;
 }
+
+/********ALIGNEMENT DE LA PARTIE HEBERGEMENT ET LES PLUS POPULAIRES***********/
 
 .hebergement{
   display: flex;
@@ -977,6 +977,8 @@ footer h1
 *********************************************************/
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  
+  /************SECTION HEBERGEMENT************/
   .hebergement{
     flex-direction: column-reverse;
   }
@@ -985,6 +987,7 @@ footer h1
     width: 100%;
   }
 
+  /***********SECTION LES PLUS POPULAIRES************/
   .cartePopulaire
   {
     width: 100%;
@@ -1000,6 +1003,7 @@ footer h1
     margin-right: 10px;
   }
 
+  /***************SECTION FILTRES*************/
   #sectionFiltre
   {
     flex-direction: column;
@@ -1015,11 +1019,13 @@ footer h1
     padding-left: 10px;
   }
 
+  /***************FOOTER****************/
   .widgetFooter
   {
     margin-right: 10%;
   }
   
+  /************SECTION ACTIVITES*************/
   #partieImageActivites
   {
     flex-direction: column;
@@ -1095,6 +1101,17 @@ header ul a:hover{
   border-top: none;
 }
 
+/********TEXTE BAS ENTETE********/
+.textePromo
+{
+  margin: 10px 15px 8px 15px;
+}
+
+.typeHebergement
+{
+  margin: 0px 15px 25px 15px;
+}
+
 /**********Filtre**********/
   #sectionFiltre
   {
@@ -1108,36 +1125,24 @@ header ul a:hover{
     font-size: 20px;
   }
 
-  .cadreFiltre
+  /***********INFO************/
+  .contentInfo{
+    padding: 0px 15px;
+    align-items: flex-start;
+    margin-right: 0px;
+  }
+
+  /*********BARE DE RECHERCHE*******/
+  #barreDeRecherche
   {
-    flex-wrap: wrap;
-    padding-left: 15px;
-  }
-
-  .contentfiltre
-  {
-    margin-top: 12px;
-  }
-
-  /***********FOOTER***************/
-  footer{
-    flex-wrap: wrap;
-    padding-left: 20px;
-  }
-
-  .widgetFooter{
-    padding-top: 20px;
-  }
-
-  /****HEBERGEMENT*********/
-  .hebergement{
-    flex-direction: column-reverse;
+    justify-content: center;
   }
 
   .chanpRecherche input
   {
     height: 100%;
     margin-right: -15px;
+    margin-left: -5px;
   }
 
   .boutonRechercher
@@ -1171,6 +1176,33 @@ header ul a:hover{
     border: solid 1px #0065FC;
   }
 
+  .cadreFiltre
+  {
+    flex-wrap: wrap;
+    padding-left: 15px;
+  }
+
+  .contentfiltre
+  {
+    margin-top: 12px;
+  }
+
+  /***********FOOTER***************/
+  footer{
+    flex-wrap: wrap;
+    padding-left: 20px;
+  }
+
+  .widgetFooter{
+    padding-top: 20px;
+  }
+
+  /****SEECTION HEBERGEMENT*********/
+  
+  .hebergement{
+    flex-direction: column-reverse;
+  }
+
   .carteHebergement
   {
     background-color: white;
@@ -1190,10 +1222,6 @@ header ul a:hover{
   .carteHebergement h2{
     font-size: 18px;
   }
-  .cartePopulaire
-  {
-    width: 100%;
-  }
 
   .contentHebergement
   {
@@ -1203,18 +1231,18 @@ header ul a:hover{
   
   .contentHebergement h3
   {
-    font-size: 18px;
+    font-size: 17px;
   }
   
   .contentHebergement p
   {
     padding-bottom: 3px;
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .contentHebergement i
   {
-    font-size: 18px;
+    font-size: 17px;
   }
   
   .cadreHebergement
@@ -1224,6 +1252,10 @@ header ul a:hover{
 
   /********SECTION POPULAIRES************/
   
+  .cartePopulaire
+  {
+    width: 100%;
+  }
   .contentPopulaire h3
   {
     font-size: 16px;
@@ -1252,32 +1284,8 @@ header ul a:hover{
     font-size: 22px;
   }
 
-  /***********INFO************/
-  .contentInfo{
-    padding: 0px 15px;
-    align-items: flex-start;
-    margin-right: 0px;
-  }
-
-  /*********BARE DE RECHERCHE*******/
-  #barreDeRecherche
-  {
-    justify-content: center;
-  }
-
-  /********TEXTE BAS ENTETE********/
-  .textePromo
-  {
-    margin: 10px 15px 8px 15px;
-  }
-
-  .typeHebergement
-  {
-    margin: 0px 15px 25px 15px;
-  }
-  
-
   /****ACTIVITES******/
+  
   #partieImageActivites{
     flex-direction: column;
     width: 100%;
@@ -1318,7 +1326,5 @@ header ul a:hover{
   .cadreActivites h3
   {
     font-size: 17px;
-  }
-
-  
+  } 
 }
