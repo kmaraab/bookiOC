@@ -814,10 +814,11 @@ footer h1
 
 .texteEiconPopulaire
 {
+  display: flex;
   flex-direction: column; 
   margin-left: 15px;
   color: black;
-  align-content: flex-end;
+  justify-content: space-between;
 }
 
 .cartePopulaire img 
@@ -833,7 +834,8 @@ footer h1
 {
   font-size: 13.5px;
   font-family: ralewayextrabold, Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
+  margin-bottom: -8px;
 }
 
 .texteEiconPopulaire p
@@ -1077,7 +1079,7 @@ header{
 
 
 header ul{
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0px;
   padding: 0px;
   width: 100%;
@@ -1088,8 +1090,8 @@ nav {
   width: 100%;
 }
 
-nav li{
-  padding: 20px 0px 20px 0px;
+ul li{
+  padding: 20px 15px 20px 15px;
 }
 
 ul li:hover{
