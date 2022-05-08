@@ -483,17 +483,16 @@ header ul{
   display: flex;
 }
 
-header ul li{
+ul li{
   list-style: none;
 }
 
-header ul a{
+ul a{
   padding: 35px 25px 0px 25px;
   color: black;
 }
 
-header ul a:hover{
-  padding: 35px 25px 0px 25px;
+ul a:hover{
   color: #0065FC;
   border-top: 2px solid #0065FC;
 }
@@ -1074,7 +1073,7 @@ header{
   width: 100%;
   flex-direction: column;
   margin: 0px;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px;
 }
 
 
@@ -1091,7 +1090,7 @@ nav {
 }
 
 ul li{
-  padding: 20px 15px 20px 15px;
+  padding: 20px 15px;
 }
 
 ul li:hover{
@@ -1099,7 +1098,7 @@ ul li:hover{
   border-bottom: 2px solid #0065FC;
 }
 
-header ul a:hover{
+ul a:hover{
   border-top: none;
 }
 
